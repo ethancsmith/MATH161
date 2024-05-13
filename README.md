@@ -1,3 +1,3 @@
-# MATH 161 (Calculus I)
+# MATH161
 
-Course notes for calculus I at GCC
+$\LaTeX\$ project for Calc I notes primarily based on _Thomas' Calculus_.

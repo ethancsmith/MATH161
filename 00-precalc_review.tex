@@ -1,0 +1,200 @@
+%!TEX root = main.tex
+
+\lectureheader{161}{Calculus I}{Precalculus review}{\textit{Thomas' Calculus} 1.1, 1.2}
+
+\begin{remark}\,
+\begin{itemize}
+\item Math is \underline{not} just\dots 
+\begin{itemize}
+\item getting the right answer (though we don't want to be wrong).
+\item a magic trick (though some great magic tricks are based on math).
+\end{itemize}
+\vfill
+
+\item Math is a \underline{language} for building models to describe \underline{precise} relationships.
+\begin{itemize}
+\item Math is the language that nature/God speaks. -- Richard Fenyman
+\item Math is the language we use to explain our ideas to other scientists and engineers. 
+\begin{itemize}
+\item As a undergraduate, Strogatz solved a big open problem concerning DNA by playing with ribbon.
+\item His bio-chem professor was excited, but told him he needed a mathematical proof.
+\item Published work in \textit{Proceedings of the National Academy of Sciences}.
+\end{itemize}
+\item Math has its own grammar/syntax.
+\item We can't be precise if we are sloppy.  
+\item It doesn't work to \dots
+\begin{itemize}
+\item write down most of the correct symbols
+	(e.g., ``We calculus.").
+\item write down all of the correct symbols but in a strange/nonsensical order
+	(e.g., ``to study calculus. going We are").
+\end{itemize}
+\end{itemize}
+\vfill
+
+\item Math is a \underline{science of deduction} that allows us to discover hidden implications of our models.
+ \begin{itemize}
+ \item Maxwell
+ \begin{itemize}
+ \item Rewrote the experimental results of Faraday and Amp\`ere in terms of calculus.
+ \item Discovered link between electricity, magnetism, and light.
+ \end{itemize}
+ \item Gell-man
+ \begin{itemize}
+ \item Modeled known fundamental particles in terms of group theory.
+ \item Predicted the existence of previously unknown particles.
+ \end{itemize}
+ \end{itemize}
+\vfill
+
+\item We will learn to write proofs in this class, not because I assume that you're all math majors, but because I assume that most of you aren't.
+\begin{itemize}
+\item STEM professionals use math to \dots
+\begin{itemize}
+\item write down precise descriptions/models for their objects of interest and their relationships.
+\item deduce hidden consequences of their models or explain experimental consequences already observed.
+\item to get  their ideas straight before \underline{translating} them into computer language(s) for large scale calculations.
+\end{itemize}
+\item In this class, everything is a proof, even a calculation.
+\begin{itemize}
+\item Write \underline{solutions} as though you are writing a letter to a student in another calculus course at another school who won't believe your result is correct unless you \underline{explain it}.
+\item Write/comment your computer code and annotations similarly.
+\end{itemize}
+\end{itemize}
+\vfill
+\end{itemize}
+\end{remark}
+
+
+\newpage
+
+\begin{definition}
+A \textbf{(real) function} is a rule $f$ that assigns each member $x$ of set $D$ to a \underline{unique} element $f(x)$ in $\R$.
+\begin{itemize}
+\item The set of ``input" values $D$ is called the \textbf{domain} of $f$.
+\item The set of all ``outputs" $f(D) = \{f(x) : x\in D\}$ is called the \textbf{range} of $f$.
+\item We will sometimes write $f:D\to \R$ as a shorthand to say that $f$ is a function with domain $D$.
+\item The \textbf{graph} of a function $f:D\to \R$ is the set of ordered pairs
+\begin{equation*}
+\Big\{\big(x,y\big) : x\in D\text{ and }y=f(x)\Big\}.
+\end{equation*}
+\end{itemize}
+\end{definition}
+
+\begin{example}
+Graph the function $y=f(x)$ if
+\begin{equation*}
+f(x)=\begin{cases}
+-x, & x<0\\
+x^2,& 0\le x< 1\\
+1, & x>1.
+\end{cases}
+\end{equation*}
+\end{example}
+
+\newpage
+
+\begin{theorem}[Vertical line test]
+If $f:D\to \R$, then the line $x=a$ intersects the graph of $f$ in exactly one point for each $a$ in $D$.
+\end{theorem}
+
+\begin{example}
+Sketch the graph of $\big\{(x,y) : x^2+y^2=1\big\}$ and show that it is not a function of $x$.
+Finally, cover the graph with two functions of $x$.
+\end{example}
+
+
+\newpage
+
+\begin{definition}
+The \textbf{natural domain} of a function $f$ is the largest domain $D$ for which $f(D)\subseteq \R$.
+\end{definition}
+
+\begin{example}
+Determine the natural domain and associated range for each of the following functions.
+\begin{enumerate}
+\item $f(x) = x^2$.
+\vfill
+\item $f(x) = 1/x$.
+\vfill
+\item $f(x)=\sqrt x$.
+\vfill
+\item $f(x)=\sqrt{4-x}$.
+\vfill
+\item $f(x) = \sqrt{1-x^2}$.
+\vfill
+\end{enumerate}
+\end{example}
+
+\newpage
+
+\begin{definition}
+Let $f: D\to \R$.
+\begin{itemize}
+\item We say that $f$ is \textbf{even} if $f(-x) = f(x)$ for all $x\in D$, i.e., the graph of $f$ is symmetric about the $y$-axis.
+\item We say that $f$ is \textbf{odd} if $f(-x) = -f(x)$ for all $x\in D$, i.e., the graph of $f$ is symmetric about the origin.
+\end{itemize}
+\end{definition}
+
+
+ \begin{example}
+Determine (with proof) whether each function is even, odd, or neither.
+Hint: You need to compute the domain for each first.
+\begin{enumerate}
+\item $f(x) = x^2$.
+\vfill
+\item $f(x)=x^3+x$.
+\vfill
+\item $f(x) = x+1$.
+\vfill
+\end{enumerate}
+\end{example}
+
+\newpage
+
+\begin{definition}
+Let $f:D_f\to \R$ and $g:D_g\to \R$.
+\begin{itemize}
+\item The rule $(f+g)(x) = f(x) + g(x)$ defines a function with $$\dom(f+g) = D_f\cap D_g.$$
+\item The rule $(f-g)(x) = f(x) - g(x)$ defines a function with $$\dom(f-g) = D_f\cap D_g.$$
+\item The rule $(fg)(x) = f(x)  g(x)$ defines a function with $$\dom(fg) = D_f\cap D_g.$$
+\item The rule $(f/g)(x) = \frac{f(x)}{g(x)}$ defines a function with $$\dom(f/g) = \{x : x\in D_f\cap D_g\text{ and } g(x)\ne 0\}.$$
+\end{itemize}
+\end{definition}
+
+\begin{example}
+Compute $f+g$, $f-g$, $fg$ and $f/g$ and their domains if $f(x)=\sqrt x$ and $g(x)=\sqrt{1-x}$.
+\end{example}
+
+\newpage
+
+\begin{definition}
+Let $f:D_f\to \R$ and $g:D_g\to \R$.
+The rule $(f\circ g)(x) = f(g(x))$ defines a function with
+$$\dom(f\circ g) = \{x: x\in D_g\text{ and } g(x)\in D_f\}.$$
+\end{definition}
+
+\begin{example}
+Compute $f\circ g$ together with its domain for the following.
+\begin{enumerate}
+\item $f(x) =x^2+1$ and $g(x)=\DS\frac{x+1}{x-1}$.
+\vfill
+\item $f(x)=x^2$ and $g(x)=\sqrt x$.
+\vfill
+\item $f(x)=\sqrt x$ and $g(x)=x^2$.
+\vfill
+\end{enumerate}
+\end{example}
+
+\newpage
+
+\begin{example}
+Given the function $f(x)=x^4-4x^3+10$, find formulas to \dots
+\begin{enumerate}
+\item compress the graph horizontally by a factor of 2 followed by a reflection across the $y$-axis and then a shift 3 units to the right.
+\vfill
+\item compress the graph vertically by a factor of 2 followed by a reflection across the $x$-axis and then a shift 1 unit up.
+\vfill
+\end{enumerate}
+\end{example}
+

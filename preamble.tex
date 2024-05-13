@@ -1,0 +1,89 @@
+\parindent 0pt
+
+% packages
+\usepackage{amssymb}
+\usepackage{cancel}
+\usepackage{fullpage}
+\usepackage{polynom}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepackage{tikz}
+\usetikzlibrary{positioning} 
+\usetikzlibrary{angles, quotes}
+\usepackage{float}
+\usepackage{centernot}
+\usepackage{enumitem}
+\setlist[enumerate]{
+label=(\alph*),
+noitemsep
+}
+\usepackage{mdframed}
+\usepackage{mdframed}
+\mdfsetup{
+	skipabove=.25\baselineskip,
+	skipbelow=.5\baselineskip, 
+	%innertopmargin=.5\baselineskip,
+	innerbottommargin=.5\baselineskip
+ }
+\surroundwithmdframed{definition}
+\surroundwithmdframed{theorem}
+\surroundwithmdframed{axiom}
+\surroundwithmdframed{corollary}
+\surroundwithmdframed{lemma}
+\surroundwithmdframed{remark}
+\surroundwithmdframed{quote}
+
+\theoremstyle{definition}
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{proposition}{Proposition}
+\newtheorem*{axiom}{Axiom}
+\newtheorem*{corollary}{Corollary}
+\newtheorem*{definition}{Definition}
+\newtheorem{example}{Example}
+\newtheorem*{remark}{Remark(s)}
+\newtheorem{exercise}{Exercise}
+\newtheorem{question}{Questions}
+
+\newcommand{\R}{\mathbb R}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\N}{\mathbb N}
+\newcommand{\dom}{\mathrm{dom}}
+\newcommand{\rng}{\mathrm{rng}}
+\newcommand{\Sym}{\mathrm{Sym}}
+
+\newcommand{\dee}{\mkern 2mu \mathrm{d}}
+\newcommand{\E}{\mathrm{e}}
+\newcommand{\I}{\mathrm{i}}
+
+\DeclareMathOperator{\arccsc}{arccsc}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\csch}{csch}
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\arcsinh}{arcsinh}
+\DeclareMathOperator{\erf}{erf}
+\DeclareMathOperator{\sinc}{sinc}
+\DeclareMathOperator{\Si}{Si}
+\DeclareMathOperator{\Li}{Li}
+
+\newcommand{\floor}[1]{\left\lfloor#1\right\rfloor}
+\newcommand{\ceil}[1]{\left\lceil#1\right\rceil}
+\newcommand{\mchoose}[2]{\left(\!\!\left(\genfrac{}{}{0pt}{}{#1}{#2}\right)\!\!\right)}
+\renewcommand{\brace}[2]{\genfrac{\{}{\}}{0pt}{}{#1}{#2}}
+\newcommand{\ffactorial}[2]{(#1)_{#2}}
+\newcommand{\rfactorial}[2]{#1^{(#2)}}
+
+\newcommand{\DS}{\displaystyle}
+
+% \lectureheader{course number}{course name}{lecture topic}{reading assignment}
+\newcommand{\lectureheader}[4]{
+\rule{\textwidth}{1pt}
+%\vspace{\baselineskip}
+{\textsc{MATH #1 (#2)\ \hfill #3}}\\
+\textbf{Reading assignment:} #4\newline 
+\rule{\textwidth}{1pt}
+\vspace{\baselineskip}
+}
