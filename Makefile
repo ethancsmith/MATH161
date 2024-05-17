@@ -1,5 +1,5 @@
 DOCUMENT = main
-LECTURES = 00-precalc_review 01-trig_review 02-rates_of_change_and_tangents
+LECTURES = 00-precalc_review 01-trig_review 02-rates_of_change_and_tangents 03-limits_and_limit_laws
 SOURCES = *.tex img/*.png
 
 all: $(DOCUMENT).pdf $(DOCUMENT)_with_solutions.pdf lectures
