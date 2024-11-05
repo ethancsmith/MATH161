@@ -34,17 +34,24 @@ noitemsep
 \surroundwithmdframed{remark}
 \surroundwithmdframed{quote}
 
+\renewcommand{\thesection}{\thechapter.\arabic{section}}
+\makeatletter
+\renewcommand\theequation{\thesection.\arabic{equation}} \@addtoreset{equation}{section}
+\renewcommand\thefigure{\thesection.\arabic{figure}} \@addtoreset{figure}{chapter}
+\renewcommand\thetable{\thesection.\arabic{table}} \@addtoreset{table}{chapter}
+\makeatother
+
 \theoremstyle{definition}
-\newtheorem*{theorem}{Theorem}
-\newtheorem*{lemma}{Lemma}
-\newtheorem*{proposition}{Proposition}
-\newtheorem*{axiom}{Axiom}
-\newtheorem*{corollary}{Corollary}
-\newtheorem*{definition}{Definition}
-\newtheorem{example}{Example}
-\newtheorem*{remark}{Remark(s)}
-\newtheorem{exercise}{Exercise}
-\newtheorem{question}{Questions}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{remark}[theorem]{Remark(s)}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{question}[theorem]{Questions}
 
 \newcommand{\R}{\mathbb R}
 \newcommand{\Q}{\mathbb Q}
@@ -58,6 +65,9 @@ noitemsep
 \newcommand{\dee}{\mkern 2mu \mathrm{d}}
 \newcommand{\E}{\mathrm{e}}
 \newcommand{\I}{\mathrm{i}}
+\renewcommand{\Re}{\mathrm{Re}}
+\renewcommand{\Im}{\mathrm{Im}}
+\renewcommand{\bar}{\overline}
 
 \DeclareMathOperator{\arccsc}{arccsc}
 \DeclareMathOperator{\arcsec}{arcsec}
