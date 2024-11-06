@@ -1,0 +1,189 @@
+%!TEX root = main.tex
+\setcounter{chapter}{3}
+\setcounter{section}{3}
+\setcounter{theorem}{0}
+\setcounter{equation}{0}
+
+\lectureheader{161}{Calculus I}{Derivative rules}{\textit{Thomas' Calculus} \thesection, 3.5}
+
+\begin{theorem}[Constant rule]
+If $c\in\R$, then 
+\begin{equation*}
+\frac{\dee}{\dee x}c = 0.
+\end{equation*}
+\end{theorem}
+\begin{theorem}[Power rule]
+If $c\in\R$, then 
+\begin{equation*}
+\frac{\dee}{\dee x}x^c = cx^{c-1}.
+\end{equation*}
+\end{theorem}
+
+\begin{example}
+Differentiate the following with respect to $x$.
+\begin{enumerate}[label=(\alph*)]
+\item $y=x^{2/3}$
+\vfill
+\item $y=x^{\sqrt 2}$
+\vfill
+\item $y=x^{-4/3}$
+\vfill
+\item $y=\sqrt{x^{2+\pi}}$
+\vfill
+\end{enumerate}
+\end{example}
+
+\newpage
+
+\begin{theorem}[Constant multiple rule]
+If $u$ is a differentiable function of $x$ and $c\in\R$, then
+\begin{equation*}
+\frac{\dee}{\dee x}(cu) = c\frac{\dee u}{\dee x}.
+\end{equation*}
+\end{theorem}
+\begin{proof}\,
+
+\vspace{3in}
+\end{proof}
+
+\begin{theorem}[Sum rule]
+If $u$ and $v$ are both differentiable functions of $x$, then
+\begin{equation*}
+\frac{\dee}{\dee x}(u+v) = \frac{\dee u}{\dee x} + \frac{\dee v}{\dee x}.
+\end{equation*}
+\end{theorem}
+\begin{proof}\,
+
+\vspace{3in}
+\end{proof}
+
+\newpage
+
+\begin{example}
+Find all places where the curve $y=x^4-2x^2+2$ has horizontal tangent lines.
+\end{example}
+
+\newpage
+
+\begin{theorem}[Sine rule]\,
+\begin{equation*}
+\frac{\dee}{\dee x}\sin x = \cos x.
+\end{equation*}
+\end{theorem}
+\begin{proof}\,
+
+\vspace{3in}
+\end{proof}
+
+\begin{theorem}[Cosine rule]\,
+\begin{equation*}
+\frac{\dee}{\dee x}\cos x = -\sin x.
+\end{equation*}
+\end{theorem}
+\begin{proof}\,
+
+\vspace{3in}
+\end{proof}
+
+\newpage
+
+\begin{theorem}[Product rule]
+If $u$ and $v$ are differentiable functions of $x$, then
+\begin{equation*}
+\frac{\dee}{\dee x}(uv) = u\frac{\dee v}{\dee x} + v\frac{\dee u}{\dee x}.
+\end{equation*}
+\end{theorem}
+\begin{proof}\,
+
+\vspace{5in}
+\end{proof}
+
+\newpage
+
+\begin{example}
+Compute an equation for the tangent line to the graph of $y=x\sin x$ at $x=\pi/2$.
+\end{example}
+
+\newpage
+
+
+\begin{theorem}[Quotient rule]
+If $u$ and $v$ are differentiable functions of $x$, then
+\begin{equation*}
+\frac{\dee}{\dee x}\left(\frac{u}{v}\right) = \frac{v\frac{\dee u}{\dee x} - u\frac{\dee v}{\dee x}}{v^2}.
+\end{equation*}
+\end{theorem}
+\begin{remark}
+Students often like to memorize this one using the jingle 
+\begin{center}
+``low dee high minus high dee low over the square of what's below."
+\end{center}
+If you get it the wrong way around, the rhyme doesn't work.
+\end{remark}
+\begin{proof}\,
+
+\vspace{5in}
+\end{proof}
+
+\newpage
+
+\begin{example}
+Compute the derivative of $y =\DS\frac{t^2-1}{t^3+1}$ with respect to $t$.
+Then determine where the tangent lines to the graph have positive/negative/zero slope.
+\end{example}
+
+\newpage
+
+\begin{example}
+Compute the derivative of $f(x) = \frac{\cos x}{1-\sin x}$ and its domain.
+\end{example}
+
+\newpage
+
+\begin{theorem}[Tangent, secant, cotangent, and cosecant rules]
+\begin{align*}
+\frac{\dee}{\dee x}\tan x &= \sec^2 x,\\
+\frac{\dee}{\dee x}\sec x &=\sec x\tan x,\\
+\frac{\dee}{\dee x}\cot x &=-\csc^2 x,\\
+\frac{\dee}{\dee x}\csc x &=-\csc x\tan x.
+\end{align*}
+\end{theorem}
+\begin{remark}\,
+\begin{itemize}
+\item After inspecting the domain of each derivative, we learn that the trigonometric functions are differentiable everywhere that they are defined.
+\item Since differentiable functions are continuous, that proves that the trigonometric functions are continuous on their domains (a fact that we stated earlier without proof).
+\end{itemize}
+\end{remark}
+
+\newpage
+
+\begin{definition}[Higher derivatives]\,
+\begin{itemize}
+\item If $y$ is a function of $x$, then the \textbf{zeroth derivative of $y$ with respect to $x$} is the function $y^{(0)}=y$ itself.
+\item If $n$ is a positive integer and $y$ is a function of $x$, then the \textbf{$n$th derivative of $y$ with respect to $x$} is the function
+\begin{equation*}
+y^{(n)} = \frac{\dee}{\dee x}y^{(n-1)}.
+\end{equation*}
+\end{itemize}
+\end{definition}
+
+\begin{remark}
+If $y=f(x)$, we also use the notations
+\begin{itemize}
+\item $y^{(n)} = \frac{\dee^ny}{\dee x^n} = f^{(n)}(x) = \frac{\dee^n f}{\dee x^n}$,
+\item $y^{(2)} = y'' = f''(x)$,
+\item $y^{(3)} = y''' = f'''(x)$,
+\end{itemize}
+but using more than 3 primes is considered to be bad manners.
+\end{remark}
+
+\begin{example}
+Compute $\DS\frac{\dee^2 y}{\dee t^2}$ if $y=\sec t$.
+\end{example}
+\vfill
+
+\begin{example}
+Compute all higher order derivatives of $y=x^3-3x^2+2$.
+\end{example}
+\vfill
+
