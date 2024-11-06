@@ -1,0 +1,177 @@
+%!TEX root = main.tex
+\setcounter{chapter}{2}
+\setcounter{section}{6}
+\setcounter{theorem}{0}
+\setcounter{equation}{0}
+
+\lectureheader{161}{Calculus I}{Limits involving infinity}{\textit{Thomas' Calculus} \thesection}
+
+\begin{definition}
+Let $f$ be a function so that every interval of the form $(a,\infty)$ contains points of $\dom(f)$.
+We say that $L$ is the \textbf{limit of $f(x)$ as $x$ approaches $\infty$}, and we write
+\begin{equation*}
+\lim_{x\to\infty}f(x) = L,
+\end{equation*}
+if for every $\epsilon>0$, there is a real number $M$ so that 
+\begin{equation*}
+x\in\dom(f)\text{ and }x>M\implies |f(x)-L|<\epsilon.
+\end{equation*}
+\end{definition}
+
+\begin{definition}
+Let $f$ be a function so that every interval of the form $(-\infty,b)$ contains points of $\dom(f)$.
+We say that $L$ is the \textbf{limit of $f(x)$ as $x$ approaches $-\infty$}, and we write
+\begin{equation*}
+\lim_{x\to -\infty}f(x) = L,
+\end{equation*}
+if for every $\epsilon>0$, there is a real number $N$ so that 
+\begin{equation*}
+x\in\dom(f)\text{ and }x<N\implies |f(x)-L|<\epsilon.
+\end{equation*}
+\end{definition}
+
+\begin{remark}
+To determine $\DS\lim_{x\to\pm\infty}\frac{f(x)}{g(x)}$ it is usually helpful to factor out the ``dominate term" in the numerator and denominator, and then use the following.
+\end{remark}
+
+\begin{theorem}
+If $k\in\R$, then
+\begin{equation*}
+\lim_{x\to\pm\infty} k =k,\text{ and }\lim_{x\to\pm\infty}\frac{1}{x} = 0.
+\end{equation*}
+\end{theorem}
+
+\begin{example}
+Evaluate $\DS\lim_{x\to\infty}\frac{8x^2-x+2}{4x^2-1}$.
+
+\end{example}
+
+\newpage
+
+
+\begin{example}
+Evaluate the following.
+\begin{enumerate}
+\item $\DS\lim_{x\to-\infty}\frac{2x^5-x^3+2}{x^3-1}$
+\vfill
+\item $\DS\lim_{x\to-\infty}\frac{x+1}{4x^2+2}$
+\vfill
+\end{enumerate}
+\end{example}
+
+\newpage
+
+\begin{definition}
+The line $y=b$ is a \textbf{horizontal asymptote} of the graph of $y=f(x)$ if either
+\begin{equation*}
+\lim_{x\to\infty}f(x) = b\text{ or }\lim_{x\to-\infty}f(x) = b.
+\end{equation*}
+\end{definition}
+
+\begin{definition}
+The line $y=mx+b$ is a \textbf{slant (or oblique) asymptote} of the graph of $y=f(x)$ if either
+\begin{equation*}
+\lim_{x\to\infty}\left(f(x) -mx- b\right)=0\text{ or }\lim_{x\to-\infty}\left(f(x)-mx-b\right) = 0.
+\end{equation*}
+\end{definition}
+
+\begin{example}
+Compute any horizontal or slant asymptotes for the following.
+\begin{enumerate}
+\item $\DS f(x) = \frac{2x+3}{5x+7}$
+\vfill
+\item $\DS g(x)=\frac{x^2-3}{2x-4}$ 
+\vfill
+\end{enumerate}
+\end{example}
+
+\newpage
+
+\begin{example}
+Evaluate the following.
+\begin{enumerate}
+\item $\DS\lim_{x\to\infty}\frac{x-3}{\sqrt{4x^2+25}}$
+\vfill
+\item $\DS\lim_{x\to-\infty}\frac{x-3}{\sqrt{4x^2+25}}$
+\vfill
+\item $\DS\lim_{x\to\infty}\left(x-\sqrt{x^2+16}\right)$
+\vfill
+\end{enumerate}
+\end{example}
+
+\newpage
+
+\begin{example}
+Evaluate the following.
+\begin{enumerate}
+\item $\DS\lim_{x\to\infty}\sin(1/x)$
+\vfill
+\item $\DS\lim_{x\to\infty}x\sin(1/x)$
+\vfill
+\end{enumerate}
+\end{example}
+
+
+
+\newpage
+
+
+
+\newpage
+
+\begin{definition}
+Let $c\in\R$, and let $f$ be a function so that every open interval containing $c$ also contains points of $\dom(f)$.
+We say that \textbf{$f(x)$ approaches $\infty$ as $x$ approaches $c$}, and we write
+\begin{equation*}
+\lim_{x\to c}f(x) = \infty,
+\end{equation*}
+if for every real number $B$, there is an $\delta>0$ so that 
+\begin{equation*}
+x\in\dom(f)\text{ and }0<|x-c|<\delta \implies f(x)>B.
+\end{equation*}
+We say that \textbf{$f(x)$ approaches $-\infty$ as $x$ approaches $c$}, and we write
+\begin{equation*}
+\lim_{x\to c}f(x) = -\infty,
+\end{equation*}
+if for every real number $B$, there is an $\delta>0$ so that 
+\begin{equation*}
+x\in\dom(f)\text{ and }0<|x-c|<\delta \implies f(x)<B.
+\end{equation*}
+\end{definition}
+
+\begin{remark}\,
+\begin{itemize}
+\item 
+If $\DS\lim_{x\to c}f(x) = L\ne 0$ and $\DS\lim_{x\to c}g(x) = 0$, then $\DS\lim_{x\to c}\left|\frac{f(x)}{g(x)}\right| = \infty$.
+\item
+To say that a limit is infinite is to be specific about the way in which it fails to exist.
+\item
+We define infinite one-sided limits in a similar way.
+\end{itemize}
+\end{remark}
+
+
+\begin{example}
+Evaluate the following.
+\begin{enumerate}
+\item $\DS\lim_{x\to 1^+}\frac{1}{x-1}$
+\vfill
+\item $\DS\lim_{x\to 1^-}\frac{1}{x-1}$
+\vfill
+\end{enumerate}
+\end{example}
+
+\newpage
+
+\begin{definition}
+The line $x=a$ is a \textbf{vertical asymptote} of the graph of $y=f(x)$ if either
+\begin{equation*}
+\lim_{x\to a^+}f(x) = \pm\infty \text{ or }\lim_{x\to a^-}f(x) = \pm\infty.
+\end{equation*}
+\end{definition}
+
+
+
+\begin{example}
+Find all vertical asymptotes of $f(x)=\DS\frac{x^2-4x+4}{x^2-4}$.
+\end{example}
