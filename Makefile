@@ -1,5 +1,5 @@
 DOCUMENT = main
-LECTURES = 00-precalc_review 01-trig_review 02-rates_of_change_and_tangents 03-limits_and_limit_laws 04-definition_of_limit 05-one-sided_limits 06-limit_practice 07-continuity 08-limits_involving_infinity 09-derivatives 10-derivatives_practice 11-derivative_rules
+LECTURES = 00-precalc_review 01-trig_review 02-rates_of_change_and_tangents 03-limits_and_limit_laws 04-definition_of_limit 05-one-sided_limits 06-limit_practice 07-continuity 08-limits_involving_infinity 09-derivatives 10-derivatives_practice 11-derivative_rules 12-rates_of_change 13-chain_rule 14-implicit_differentiation 15-related_rates
 SOURCES = *.tex img/*.png
 
 all: $(DOCUMENT).pdf $(DOCUMENT)_with_solutions.pdf lectures
