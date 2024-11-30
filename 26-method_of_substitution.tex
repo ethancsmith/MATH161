@@ -1,0 +1,111 @@
+%!TEX root = main.tex
+\setcounter{chapter}{5}
+\setcounter{section}{5}
+\setcounter{theorem}{0}
+\setcounter{equation}{0}
+
+\lectureheader{161}{Calculus I}{Method of substitution}{\textit{Thomas' Calculus} \thesection}
+
+%\begin{remark}
+%Units matter, and hence so do differentials.
+%\end{remark}
+%
+%\begin{example}
+%When compressed $x$ meters beyond its natural length, a certain spring exerts a force of 
+%\begin{equation*}
+%F=-20x
+%\end{equation*}
+%newtons along the $x$-axis.
+%An $80$-gram weight is attached to the end of a spring and the spring is compressed and then released.
+%It is observed that the position of the weight along the $x$-axis is
+%\begin{equation*}
+%x = -\frac{1}{5}\cos(t/2)\quad (0\le t\le \pi)
+%\end{equation*}
+%where $t$ is time (measured in seconds).
+%Note that this means that the force exerted by the spring at time $t$ seconds is
+%\begin{equation*}
+%F=4\cot(t/2)\quad (0\le t\le \pi)
+%\end{equation*}
+%newtons.
+%\begin{enumerate}
+%\item Why is it wrong to say that the work done by the spring on the weight over the first $\pi$ seconds is $\DS\int_0^\pi F\dee t = \int_0^\pi 4\cos(t/2)\dee t$?
+%\begin{flushright}
+%\includegraphics[width=3in]{force_v_time}
+%\end{flushright}
+%\end{enumerate}
+%\end{example}
+%
+%\newpage
+
+\begin{theorem}[Substitution rule]
+If $u=g(x)$ is a differentiable function whose range is in an interval $I$, and $f$ is continuous on $I$, then
+\begin{equation*}
+\int f(g(x))g'(x)\dee x = \int f(u)\dee u.
+\end{equation*}
+\end{theorem}
+
+\begin{remark}
+Formally, this is just the chain rule written in reverse (i.e., for antidifferentiation).
+\end{remark}
+
+\begin{proof}\,
+
+\vspace{5.5in}
+\end{proof}
+
+\newpage
+
+\begin{example}
+Evaluate $\DS\int \sqrt{2x+1}\dee x$.
+\end{example}
+
+\vfill
+
+\begin{example}
+Evaluate $\DS\int \sec^2(5x+1)\dee x$.
+\end{example}
+
+\vfill
+
+\newpage
+
+\begin{example}
+Evaluate $\DS\int x\sqrt{2x+1}\dee x$.
+\end{example}
+
+\vfill
+
+\begin{example}
+Evaluate $\DS \int\cos(7\theta+3)\dee\theta$.
+\end{example}
+
+\vfill
+
+\newpage
+
+\begin{example}
+Evaluate $\DS\int x^2\cos x^3\dee x$.
+\end{example}
+
+\vfill
+
+\begin{example}
+Evaluate $\DS\int\frac{2z\dee z}{\sqrt[3]{z^2+1}}$.
+\end{example}
+
+\vfill
+
+\newpage
+
+\begin{example}
+Evaluate the following 
+\begin{enumerate}[label=(\alph*)]
+\item $\DS\int\sin^2 x\dee x$
+\vfill
+\item $\DS\int\cos^2 x\dee x$
+\vfill
+\item $\DS\int(1-2\sin^2 x)\sin(2x)\dee x$
+\vfill
+\end{enumerate}
+\end{example}
+
