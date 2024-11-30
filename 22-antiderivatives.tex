@@ -1,0 +1,92 @@
+%!TEX root = main.tex
+\setcounter{chapter}{4}
+\setcounter{section}{7}
+\setcounter{theorem}{0}
+\setcounter{equation}{0}
+
+\lectureheader{161}{Calculus I}{Antiderivatives}{\textit{Thomas' Calculus} \thesection}
+
+\begin{definition}
+A \textbf{differential equation} is an equation involving at least one unknown function and at least one of its derivatives.
+To solve the equation is to find function(s) which satisfy the equation.
+\end{definition}
+
+\begin{definition}
+Let $f$ be a function defined on an interval $I$.
+An \textbf{antiderivative} of $f$ on $I$ is a solution $y=F(x)$ to the differential equation
+\begin{equation*}\label{antiderivative DE}
+\frac{\dee y}{\dee x} = f(x)\quad (x\in I).
+\end{equation*}
+In other words, $F$ is an antiderivative of $f$ on $I$ if $F'(x)=f(x)$ for all $x\in I$.
+\end{definition}
+
+
+\begin{example}
+Find antiderivatives for each of the following.
+\begin{enumerate}
+\item $f(x) = 2x$
+\vfill
+\item $g(x) =\cos x$
+\vfill
+\item $h(x) =\sec^2 x + \frac{1}{2\sqrt x}$
+\vfill
+\end{enumerate}
+\end{example}
+
+\newpage
+
+\begin{definition}
+A single solution to differential equation is called a \textbf{particular solution}.
+The \textbf{general solution} to a differential equation includes all functions that satisfy the equation.
+\end{definition}
+
+\begin{definition}
+The general solution to the differential equation $\frac{\dee y}{\dee x}=f(x)$ is called the \textbf{indefinite integral of $f$ with respect to $x$} and is denoted
+\begin{equation*}
+\int f(x)\dee x.
+\end{equation*}
+Here $f$ is called the \textbf{integrand} and $x$ is the \textbf{variable of integration}.
+\end{definition}
+
+\begin{theorem}
+If $F$ is an antiderivative for $f$, then 
+\begin{equation*}
+\int f(x)\dee x = F(x)+C,
+\end{equation*}
+where $C$ is an arbitrary constant.
+\end{theorem}
+
+\begin{example}
+Find the general antiderivative of the following.
+\begin{enumerate}
+\item $f(x)=x^5$
+\vfill
+\item $g(x) = \frac{1}{\sqrt x}$
+\vfill
+\item $h(x) = \sin 2x$
+\vfill
+\item $i(x) = \cos x/2$
+\vfill
+\end{enumerate}
+\end{example}
+
+\newpage
+
+\begin{definition}
+A differential equation together with a condition specifying the value of the unknown function(s) at a point in the domain is called an \textbf{initial value problem}.
+\end{definition}
+
+\begin{example}
+Solve the initial value problem 
+\begin{align*}
+y'&=3x^2,\\ 
+y(1)&=-1.
+\end{align*}
+\end{example}
+
+\newpage
+
+\begin{example}
+A hot-air balloon ascending at the rate of $12$ \si{ft/sec} is at a height $80$ \si{ft} above the ground when a package is dropped.
+How long does it take the package to reach the ground?
+\end{example}
