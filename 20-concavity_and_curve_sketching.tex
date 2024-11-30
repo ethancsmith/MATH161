@@ -1,0 +1,93 @@
+%!TEX root = main.tex
+\setcounter{chapter}{4}
+\setcounter{section}{4}
+\setcounter{theorem}{0}
+\setcounter{equation}{0}
+
+\lectureheader{161}{Calculus I}{Concavity and curve sketching}{\textit{Thomas' Calculus} \thesection}
+
+\begin{definition}
+Let $f$ be differentiable on the interval $I$.
+\begin{itemize}
+\item We say that the graph of $f$ is \textbf{concave up} on $I$ if $f'$ is increasing on $I$.
+\item We say that the graph of $f$ is \textbf{concave down} on $I$ if $f'$ is decreasing on $I$.
+\end{itemize}
+A point $(c,f(c))$ where the graph of a function has a tangent line and where the concavity changes is called an \textbf{inflection point}.
+\end{definition}
+
+\begin{theorem}
+Suppose that $f$ is twice differentiable on the interval $I$.
+\begin{enumerate}
+\item If $f''(x)>0$ on $I$, then the graph of $f$ is concave up on $I$.
+\item If $f''(x)<0$ on $I$, then the graph of $f$ is concave down on $I$.
+\end{enumerate}
+At a point of inflection $(c,f(c))$, either $f''(c)=0$ or $f''(c)$ does not exist.
+\end{theorem}
+
+\begin{example}
+Determine the concavity and inflection points of the function $f(x) = x^3-3x^2+2$.
+\end{example}
+
+\vfill
+
+\begin{example}
+Determine the concavity and inflection points of the function $f(x) =x^{5/3}$.
+\end{example}
+
+\vfill
+
+\newpage
+
+\begin{example}
+Determine the concavity and inflection points of the function $f(x) = x^4$.
+\end{example}
+
+\vfill
+
+\begin{example}
+Determine the concavity and inflection points of the function $f(x) =x^{1/3}$.
+\end{example}
+
+\vfill
+
+\newpage
+
+\begin{theorem}[Second derivative test]
+Suppose that $f''$ is continuous on an open interval containing $x=c$.
+\begin{enumerate}
+\item If $f'(c)=0$ and $f''(c)<0$, then $f$ has a local maximum at $x=c$.
+\item If $f'(c)=0$ and $f''(c)>0$, then $f$ has a local minimum at $x=c$.
+\item If $f'(c)=0$ and $f''(c)=0$, then the test fails (i.e., is inconclusive).
+\end{enumerate}
+\end{theorem}
+\begin{remark}
+The second derivative is great when it works, but it is ``less robust" than the first derivative test.
+Still there are occasions when the second derivative test works and the first derivative test is more difficult to apply.
+\end{remark}
+
+\begin{remark}[Curve sketching procedure]
+To sketch the graph of $y=f(x)$\dots
+\begin{enumerate}
+\item Identify the domain and any symmetries.
+\item Compute the derivatives $y'$ and $y''$.
+\item Calculate the critical points of $f$ and create a sign chart for $f'$.
+\item Determine where the curve is increasing/decreasing, and identify any local extrema.
+\item Create a sign chart for $f''$.
+\item Determine where the graph is concave up/down, and identify any inflection points.
+\item Find any asymptotes.
+\item Plot key points and asymptotes, and sketch a a smooth curve that is consistent with the other computed data.
+\end{enumerate}
+\end{remark}
+
+\newpage
+
+\begin{example}
+Sketch a graph of the function $f(x) = x^4-4x^3+10$.
+\end{example}
+
+\newpage
+
+\begin{example}
+Sketch a graph of the function $f(x) =\DS \frac{(x+1)^2}{1+x^2}$.
+\end{example}
+
