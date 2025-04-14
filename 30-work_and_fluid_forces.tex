@@ -1,0 +1,61 @@
+%!TEX root = main.tex
+\setcounter{chapter}{6}
+\setcounter{section}{5}
+\setcounter{theorem}{0}
+\setcounter{equation}{0}
+
+\lectureheader{161}{Calculus I}{Work and fluid forces}{\textit{Thomas' Calculus} \thesection}
+
+
+\begin{definition}
+The \textbf{work} done by a \underline{constant} force $F$ on an object as it is displaced $d$ units in a \underline{straight line} in the same or opposite direction of the force is $W = Fd$.
+\end{definition}
+
+\begin{example}
+A 5-\si{kg} bucket is lifted from the ground into the air by pulling in 20 \si{m} of rope a constant speed.
+If the linear density of the rope is 0.08 \si{kg/m}, how much work is done in lifting the bucket and rope?
+\end{example}
+\begin{flushright}
+\includegraphics[width=2in]{img/work_on_rope}
+\end{flushright}
+
+\newpage
+
+\begin{example}
+A tank has the shape of an inverted circular cone of height 10 \si{ft} and base radius 5 \si{ft}.
+Suppose the tank is filled to within 2 \si{ft} of the top with olive oil weighing 57 \si{lb/ft^3}.
+How much work does it take to pump the oid to the rim of the tank?
+\end{example}
+\begin{flushright}
+\includegraphics[width=3in]{img/work_by_pump}
+\end{flushright}
+
+\newpage
+
+\begin{definition}
+\textbf{Pressure} is the amount of force per unit area applied perpendicularly to the surface of an object.
+\end{definition}
+
+\begin{remark}
+When an object is submerged in a fluid, the pressure at any point on its surface depends on the depth.
+In a standing fluid of weight-density $w$, the pressure at depth $h$ is
+\begin{equation*}
+P = wh.
+\end{equation*}
+\end{remark}
+
+\begin{example}
+A dam has the shape of an isosceles trapezoid.
+The height of the dam is 20 \si{m}, the width at the top is 50 \si{m}, and the width at the bottom is 30 \si{m}.
+Find the total force due to hydrostatic pressure if the water level is 4 \si{m} from the top of the dam, assuming that the mass-density of water is $\delta = 1000$ \si{kg/m^3}.
+\end{example}
+
+\ifdefined\SOLUTION
+\SOLUTION{
+First we observe that the weight-density of water is 
+\begin{equation*}
+w = \delta g = 1000\cdot 9.8 = 9800\ \si{N/m^3}.
+\end{equation*}
+Note that 1 \si{N} = 1 \si{kg\cdot m/s^2}.
+}
+\fi
