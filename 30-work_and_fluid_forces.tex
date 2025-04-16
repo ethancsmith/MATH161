@@ -12,12 +12,43 @@ The \textbf{work} done by a \underline{constant} force $F$ on an object as it is
 \end{definition}
 
 \begin{example}
-A 5-\si{kg} bucket is lifted from the ground into the air by pulling in 20 \si{m} of rope a constant speed.
-If the linear density of the rope is 0.08 \si{kg/m}, how much work is done in lifting the bucket and rope?
+A 5-\si{kg} bucket is lifted from the ground into the air by pulling in 20 \si{m} of rope at a constant speed.
+If the linear density of the rope is $\delta=0.08$ \si{kg/m}, how much work is done in lifting the bucket and rope?
 \end{example}
 \begin{flushright}
 \includegraphics[width=2in]{img/work_on_rope}
 \end{flushright}
+
+\ifdefined\SOLUTION
+\SOLUTION{
+To lift the bucket and rope at a constant speed, the force $F$ applied by the worker must equal the force due to gravity.
+Thus lifting the 5-\si{kg} bucket 20 meters into the air simply requires
+\begin{equation*}
+W_0 = 5\cdot g\cdot 20 = 100g = 980
+\end{equation*}
+\si{N\cdot m} or Joules.
+However, the 20 meters of rope also has mass, and so it requires work to lift the rope along with the bucket.
+This is not a simple problem since not all of the rope has to be lifted the full 20 meters.
+To address this problem, we let $x$ measure the distance from the ground (in meters), 
+and we slice the rope into ``infinitesimal pieces" of length $\dee x$ meters.
+Gravity exerts a force of $-g\cdot c\dee x$ Newtons on such a slice of rope.
+Thus, the worker must exert a force of 
+\begin{equation*}
+F=g\cdot c\dee x
+\end{equation*}
+Netwons to lift this slice at a constant speed,
+and the slice at position $x$ must be lifted $(20-x)$ meters.
+Therefore, the work to lift the full 20 meters of rope is
+\begin{equation*}
+W_1 = \int_0^{20}gc(20-x)\dee x = gc\left(20x -\frac{x^2}{2}\right)\Big|_0^{20} = 156.8
+\end{equation*}
+Joules so that the total work to lift the rope and bucket is
+\begin{equation*}
+W = W_0 + W_1 = 1136.8
+\end{equation*}
+Joules.
+}
+\fi
 
 \newpage
 
