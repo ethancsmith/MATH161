@@ -30,7 +30,6 @@ If `pandoc` is installed on your system, then the following will make an MS Word
 make docx
 ```
 However, the conversion sometimes breaks and is not typically as pretty.
-```{note}
-Currently, this function seems to be entirely broken.
-```
+**Currently, this functionality appears to be entirely broken.**
+
 Of course, a simple call to `make` with no arguments makes _everything_ mentioned above except for DOCX versions.
