@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     14237,        370]
-NotebookOptionsPosition[     12926,        341]
-NotebookOutlinePosition[     13325,        357]
-CellTagsIndexPosition[     13282,        354]
+NotebookDataLength[     12686,        330]
+NotebookOptionsPosition[     11665,        304]
+NotebookOutlinePosition[     12064,        320]
+CellTagsIndexPosition[     12021,        317]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -173,7 +173,8 @@ Cell[BoxData[{
      RowBox[{"{", 
       RowBox[{"t", ",", 
        RowBox[{"Pi", "/", "4"}], ",", "\"\<\[Theta]\>\""}], "}"}], ",", 
-     "0.001", ",", "Pi"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], "Input",
+     RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "\[IndentingNewLine]", 
+  "]"}]}], "Input",
  CellChangeTimes->{{3.946034213724238*^9, 3.94603424273755*^9}, {
    3.946034273312442*^9, 3.946034679606332*^9}, {3.946034744119875*^9, 
    3.946034832214891*^9}, {3.946034886998582*^9, 3.946035070909304*^9}, {
@@ -181,20 +182,21 @@ Cell[BoxData[{
    3.946035195473282*^9}, 3.946036074138689*^9, {3.946036126602722*^9, 
    3.946036127658266*^9}, {3.946036166964827*^9, 3.946036201274458*^9}, {
    3.946036498352972*^9, 3.946036517015064*^9}, {3.9469850402705917`*^9, 
-   3.94698504062661*^9}},ExpressionUUID->"86c2f803-eb43-440d-919b-\
-5246a3decea0"],
+   3.94698504062661*^9}, {3.954954082740337*^9, 3.95495408378057*^9}, {
+   3.954954128089416*^9, 3.954954130416011*^9}},
+ CellLabel->"In[19]:=",ExpressionUUID->"86c2f803-eb43-440d-919b-5246a3decea0"],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`t$$ = Rational[1, 4] Pi, Typeset`show$$ = 
-    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+   DynamicModuleBox[{$CellContext`t$$ = 1., Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{{
-       Hold[$CellContext`t$$], Rational[1, 4] Pi, "\[Theta]"}, 0.001, Pi, 
-      ControlType -> Manipulator}}, Typeset`size$$ = {
-    540.5, {39.642578125, 16.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True}, 
+       Hold[$CellContext`t$$], Rational[1, 4] Pi, "\[Theta]"}, -1, 1, 
+      ControlType -> Manipulator}}, Typeset`size$$ = {576., {299., 304.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+    
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`t$$ = Rational[1, 4] Pi}, 
       "ControllerVariables" :> {}, 
@@ -211,9 +213,9 @@ Cell[BoxData[
             Style["1-cos(\[Theta])", 
              Darker[Green]], "\[LessEqual]", 
             Style["|\[Theta]|", Orange]}], 18], ImageSize -> Large], 
-      "Specifications" :> {{{$CellContext`t$$, Rational[1, 4] Pi, "\[Theta]"},
-          0.001, Pi}}, "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{688., {71., 76.}},
+      "Specifications" :> {{{$CellContext`t$$, Rational[1, 4] Pi, 
+          "\[Theta]"}, -1, 1}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{620., {344., 350.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -227,54 +229,15 @@ Cell[BoxData[
  CellChangeTimes->{{3.946034236087322*^9, 3.946034243322146*^9}, 
    3.94603428507146*^9, {3.946034355048334*^9, 3.946034392019567*^9}, {
    3.946034470456076*^9, 3.946034473401918*^9}, {3.9460345615105886`*^9, 
-   3.9460345989849787`*^9}, {3.946034642381263*^9, 3.946034680332341*^9}, {
+   3.9460345989849796`*^9}, {3.946034642381263*^9, 3.946034680332341*^9}, {
    3.946034773276506*^9, 3.946034832979054*^9}, {3.946034922517434*^9, 
    3.946034935534134*^9}, 3.946035011859804*^9, {3.946035051319195*^9, 
    3.946035071700808*^9}, 3.946035141236493*^9, {3.946035188855219*^9, 
    3.946035196081693*^9}, 3.946036075555786*^9, {3.946036119097721*^9, 
    3.9460361288446093`*^9}, {3.946036180192327*^9, 3.94603620171673*^9}, {
-   3.946036508623927*^9, 3.946036517569474*^9}},
- CellLabel->
-  "Out[320]=",ExpressionUUID->"4829a192-b949-47e4-b256-577df506b30f"],
-
-Cell["\<\
-Show::gcomb: Could not combine the graphics objects in 
-                           Pi       Pi
-    Show[circle, triangles[--], arc[--], 
-                           4        4
-     PlotLabel -> |sin(\[Theta])|\[LessEqual]|\[Theta]|\t1-cos(\[Theta])\
-\[LessEqual]|\[Theta]|, ImageSize -> Large].\
-\>", "Message", "MSG",
- CellChangeTimes->{3.946985035605332*^9},
- CellLabel->
-  "During evaluation of \
-In[1]:=",ExpressionUUID->"a83feae8-28dc-4b87-9f08-63d0d8927674"],
-
-Cell["\<\
-Show::gcomb: Could not combine the graphics objects in 
-                           Pi       Pi
-    Show[circle, triangles[--], arc[--], 
-                           4        4
-     PlotLabel -> |sin(\[Theta])|\[LessEqual]|\[Theta]|\t1-cos(\[Theta])\
-\[LessEqual]|\[Theta]|, ImageSize -> Large].\
-\>", "Message", "MSG",
- CellChangeTimes->{3.946985035650137*^9},
- CellLabel->
-  "During evaluation of \
-In[1]:=",ExpressionUUID->"35a8f687-8be5-4620-ac10-25b0fb9c951e"],
-
-Cell["\<\
-Show::gcomb: Could not combine the graphics objects in 
-                           Pi       Pi
-    Show[circle, triangles[--], arc[--], 
-                           4        4
-     PlotLabel -> |sin(\[Theta])|\[LessEqual]|\[Theta]|\t1-cos(\[Theta])\
-\[LessEqual]|\[Theta]|, ImageSize -> Large].\
-\>", "Message", "MSG",
- CellChangeTimes->{3.9469850368550653`*^9},
- CellLabel->
-  "During evaluation of \
-In[1]:=",ExpressionUUID->"6774a3a6-adc1-49c7-be32-ecb4d81ef54c"]
+   3.946036508623927*^9, 3.946036517569474*^9}, {3.954954061962853*^9, 
+   3.954954084401709*^9}, 3.95495413150149*^9},
+ CellLabel->"Out[27]=",ExpressionUUID->"3c8c4eff-e854-4f28-8d36-558e34b216bd"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -358,19 +321,16 @@ CellTagsIndex->{}
 Notebook[{
 Cell[558, 20, 1445, 35, 62, "Text",ExpressionUUID->"7517d3b3-2ea7-4d68-90ff-51d990d0c898"],
 Cell[CellGroupData[{
-Cell[2028, 59, 4528, 125, 388, "Input",ExpressionUUID->"86c2f803-eb43-440d-919b-5246a3decea0"],
-Cell[6559, 186, 2755, 51, 166, "Output",ExpressionUUID->"4829a192-b949-47e4-b256-577df506b30f"],
-Cell[9317, 239, 473, 11, 78, "Message",ExpressionUUID->"a83feae8-28dc-4b87-9f08-63d0d8927674"],
-Cell[9793, 252, 473, 11, 78, "Message",ExpressionUUID->"35a8f687-8be5-4620-ac10-25b0fb9c951e"],
-Cell[10269, 265, 475, 11, 78, "Message",ExpressionUUID->"6774a3a6-adc1-49c7-be32-ecb4d81ef54c"]
+Cell[2028, 59, 4658, 127, 388, "Input",ExpressionUUID->"86c2f803-eb43-440d-919b-5246a3decea0"],
+Cell[6689, 188, 2794, 51, 736, "Output",ExpressionUUID->"3c8c4eff-e854-4f28-8d36-558e34b216bd"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[10781, 281, 817, 20, 52, "Input",ExpressionUUID->"72cc7061-ce25-4194-a0aa-ca7c08670159"],
-Cell[11601, 303, 755, 17, 34, "Output",ExpressionUUID->"4b905bd6-71e9-4302-a776-b42131036919"]
+Cell[9520, 244, 817, 20, 52, "Input",ExpressionUUID->"72cc7061-ce25-4194-a0aa-ca7c08670159"],
+Cell[10340, 266, 755, 17, 34, "Output",ExpressionUUID->"4b905bd6-71e9-4302-a776-b42131036919"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12393, 325, 332, 8, 30, "Input",ExpressionUUID->"eaa48d17-fd1e-45b1-924a-2d429c8f21cb"],
-Cell[12728, 335, 182, 3, 34, "Output",ExpressionUUID->"264a5e41-ced3-4102-b20a-ef2719b445f3"]
+Cell[11132, 288, 332, 8, 30, "Input",ExpressionUUID->"eaa48d17-fd1e-45b1-924a-2d429c8f21cb"],
+Cell[11467, 298, 182, 3, 34, "Output",ExpressionUUID->"264a5e41-ced3-4102-b20a-ef2719b445f3"]
 }, Open  ]]
 }
 ]
