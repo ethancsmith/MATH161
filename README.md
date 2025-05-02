@@ -9,7 +9,7 @@ To build an individual lecture PDF (without solutions to examples) use the follo
 ```shell
 make <filename.pdf>
 ```
-For example, the following call to `make` will build the lecture notes for the precalculus review roughly corresponding to section 1.1 and 1.2 of _Thomas' Calculus_.
+For example, the following call to `make` will build the lecture notes for the precalculus review roughly corresponding to sections 1.1 and 1.2 of _Thomas' Calculus_.
 ```shell
 make 00-precalc_review.pdf
 ```
@@ -25,6 +25,7 @@ To build all lecture notes bound into a single PDF **including solutions to exam
 ```shell
 make main_with_solutions.pdf
 ```
+Note: Very few solutions have been written for this set of course notes.
 If `pandoc` is installed on your system, then the following will make an MS Word version of the entire set of notes **with solutions included**.
 ```shell
 make docx
