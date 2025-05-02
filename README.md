@@ -9,7 +9,7 @@ To build an individual lecture PDF (without solutions to examples) use the follo
 ```shell
 make <filename.pdf>
 ```
-For example, the following call to `make` will build the lecture notes for \textsection 7.1 (Inverse functions) of _Thomas' Calculus_.
+For example, the following call to `make` will build the lecture notes for the precalculus review roughly corresponding to section 1.1 and 1.2 of _Thomas' Calculus_.
 ```shell
 make 00-precalc_review.pdf
 ```
